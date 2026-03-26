@@ -20,7 +20,6 @@ class HomePage extends StatefulWidget {
     }
 
     Future<void> loadConfig() async {
-      await remoteConfig.init();
       setState(() {
         heading = remoteConfig.heading;
       });
